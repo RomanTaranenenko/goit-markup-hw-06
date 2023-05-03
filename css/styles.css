@@ -243,13 +243,15 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         bottom: 33.33%;
         right: 33.33%;
     }
+
+
     /* Form Tags */
-    .form-modal{
-    padding: 0 24px;
+
+    .modal{
+    padding: 72px 24px 24px;
     }
     .form-text{
     display: block;
-    padding-top: 72px;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -259,6 +261,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #2E2F42;
 }
     .form-puncts{
+        display: block;
         margin-bottom: 4px;
         font-size: 12px;
         line-height: 1.17;
@@ -318,13 +321,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .form-puncts.checkbox{
     display: flex;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     align-items: center;
     
 }
    
     .punct-check{
-        appearance: none;
+    appearance: none;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -333,7 +336,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-repeat: no-repeat ;
     background-position: center;
     background-size: 0;
-
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), backgroundsize 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -342,9 +344,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         border: 1px solid #404BBF;
         background-size: 10px;
     }
-    .form-submit{
-    margin-bottom: 24px;
-    }
+   
     .link-form{
         color: var(--brands-color);
     }
@@ -585,8 +585,80 @@ display: flex;
 .icon-social{
     fill:var(--card-color)
 }
+/* Form-Footer */
 
+.wrapper-footer-form {
+    flex-grow: 1;
+    margin-left: 80px;
+}
 
+.form-footer{
+    padding-top: 16px;
+    display: flex;
+}
+
+.footer-form-text {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--white-color);
+}
+
+.footer-punct {
+    width: 264px;
+    height: 40px;
+    margin-right: 24px;
+    padding-left: 16px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--white-color);
+    outline: 2px solid transparent;
+        outline-offset: -2px;
+        transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-punct:focus{
+outline-color: var(--brands-color)}
+
+.footer-punct::placeholder{
+    
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+        color: var(--white-color);
+}
+
+.footer-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    display: flex;
+    width: 165px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    background: var(--brands-color);
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+   .footer-btn:hover,
+   .footer-btn:focus{
+    background-color: var(--hover-color);
+}
+
+.icon-footer-btn {
+   margin-left: 16px;
+}
 
 
 
